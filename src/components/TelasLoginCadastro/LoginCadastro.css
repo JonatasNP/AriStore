@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+    height: 100%;
+    background-color: #fffaf8;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.pagina-logincadastro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4dad0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.conteudo {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.conteudo h1 {
+    color: #3b3b3b;
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group input {
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    background-color: #fef3ee;
+    outline: none;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border: 1px solid #d89c93;
+    box-shadow: 0 0 0 2px rgba(212, 164, 154, 0.3);
+}
+
+.form-options {
+    font-size: 14px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.form-options a {
+    color: #b07468;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.form-options a:hover {
+    color: #8f5a4d;
+}
+
+.btn-submit {
+    padding: 10px 40px;
+    background-color: #f4dad0;
+    color: #2c2c2c;
+    border: none;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #e3c1b8;
+    transform: scale(1.05);
+}
+
+.right {
+    flex: 1;
+    background: linear-gradient(135deg, #f4dad0, #ffe5dc, #fff9f7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.right img {
+    width: 380px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fceee8);
+    animation: brilho 2s ease-in-out infinite alternate;
+}
+
+.logo-login {
+    width: 120px;
+    margin-bottom: 16px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.senha-container {
+  position: relative;
+  width: 100%;
+}
+
+.senha-container input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.toggle-senha {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 1rem;
+}

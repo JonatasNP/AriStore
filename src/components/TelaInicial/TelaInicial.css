@@ -1,0 +1,161 @@
+.pagina-inicial-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe6f0 0%, #ffffff 100%);
+
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ff69b4; /* rosa vibrante do AriStore */
+  color: white;
+}
+
+.logo {
+  height: 50px;
+}
+
+.menu a {
+  margin-left: 3rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu a.active {
+  font-weight: bold;
+}
+
+.menu a.active::after {
+  width: 100%;
+}
+
+.conteudo-inicial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+}
+
+.texto {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.texto h1 {
+  font-size: 3rem;
+  color: #d63384;
+  margin-bottom: 20px;
+}
+.texto h3 {
+  color: #cf498c;
+}
+
+.texto p {
+  font-size: 1.1rem;
+  color: #ff69b4;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.botoes .btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.5);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.botoes .btn:hover {
+  transform: scale(1.05);
+  background-color: #e0559f;
+  box-shadow: 0 6px 16px rgba(255, 105, 180, 0.6);
+}
+
+.btn-secundario {
+  background-color: white;
+  color: #ff69b4;
+  border: 2px solid #ff69b4;
+}
+
+.btn-secundario:hover {
+  background-color: #ffe6f0;
+}
+
+.imagem img {
+  width: 350px;
+  max-width: 100%;
+  filter: drop-shadow(0 0 5px #ff69b4) drop-shadow(0 0 5px #fcb8d2);
+}
+
+@keyframes brilho {
+  from {
+    filter: drop-shadow(0 0 5px red) drop-shadow(0 0 5px #fcb8d2);
+  }
+
+  to {
+    filter: drop-shadow(0 0 5px #ffc837) drop-shadow(0 0 5px #f4dad0);
+  }
+}
+
+
+.btn-contato {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ec4899; /* Rosa AriStore */
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-decoration: none;
+
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-contato:hover {
+  background-color: #be185d; /* Rosa escuro */
+  transform: scale(1.1);
+}
+
+.botoes-redondos-contato {
+  display: flex;
+  gap: 15px;
+}
